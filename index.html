@@ -51,12 +51,11 @@
     }
     .newsflash {
       width: auto;
-      animation-name: text;
-      animation: 4s linear infinity;
+      animation: text 4s linear 2s infinity;
     }
     @keyframes text {
-      100% {left: 500px}
-      100% {right: 100%}
+      0% {left: 500px}
+      100% {left: -500px}
     }
     .headline_section {
       background-color: white;
