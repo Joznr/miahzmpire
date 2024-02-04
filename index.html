@@ -52,7 +52,12 @@
     }
     .newsflash {
       width: auto;
+      animation-name: text;
       animation: 4s linear infinity;
+    }
+    @keyframes text {
+      100% {left: 100%}
+      100% {right: 75%}
     }
     .headline_section {
       background-color: white;
@@ -111,6 +116,11 @@
       <button>Sign Up</button>
     </div>
   </header>
+  <div class="newsflashbox">
+    <div class="newsflash">
+      <p>Hi i am called nyscupdates.....</p>
+    </div>
+  </div>
   <div class="headline_section">
     <div class="headline">
       <div>
