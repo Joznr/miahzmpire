@@ -49,17 +49,17 @@
       position: relative;
       top: 100px;
       margin: 10px 20px 10px 20px;
+      overflow: hidden;
     }
     .newsflash {
-      width: 50px;
       position: relative;
-      animation: movement 20s linear 0s infinite;
+      animation: movement 10s linear 0s infinite;
     }
     @keyframes movement {
-      0% {left: 300px;}
-      25% {left: 200px;}
-      50% {left: 50px;}
-      100% {left: 0px;}
+      0% {left: 1000px;}
+      25% {left: 500px;}
+      50% {left: -500px;}
+      100% {left: -1000px;}
     }
     .newsflash p {
       color: green;
@@ -106,7 +106,7 @@
       0% {background-color: blue;}
       25% {background-color: green;}
       50% {background-color: orange;}
-      100% {background-color: red;}
+      100% {background-color: brown;}
     }
     .border {
       border-bottom: 5px solid gray;
