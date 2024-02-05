@@ -42,7 +42,7 @@
       padding-right: 10px;
     }
     .newsflashbox {
-      width: 100%;
+      width: auto;
       background-color: gray;
       margin:10px 30px 10px 30px;
       border-left: 20px solid green;
@@ -53,16 +53,16 @@
     .newsflash {
       width: 500px;
       position: relative;
-      animation: text 4s linear 2s infinity;
+      animation: movement 4s linear 2s infinity;
     }
-    .newsflash p {
-      color: green;
-    }
-    @keyframes text {
+    @keyframes movement {
       0% {left: 500px;}
       25% {left: 200px;}
       50% {left: -200px;}
       100% {left: -500px;}
+    }
+    .newsflash p {
+      color: green;
     }
     .headline_section {
       background-color: white;
