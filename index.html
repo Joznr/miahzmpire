@@ -42,7 +42,7 @@
       padding-right: 10px;
     }
     .newsflashbox {
-      width: auto;
+      width: device-width;
       background-color: gray;
       margin:10px 30px 10px 30px;
       border-left: 20px solid green;
@@ -97,7 +97,12 @@
     .box {
       background-color: blueviolet;
       min-width: 300px;
-      height: 180px;      
+      height: 180px;
+      animation: color 4s linear 0s 3;
+      }
+    @keyframes color {
+      from {background-color: green;}
+      to {background-color: orange;}
     }
     .border {
       border-bottom: 5px solid gray;
