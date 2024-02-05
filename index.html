@@ -42,8 +42,7 @@
       padding-right: 10px;
     }
     .newsflashbox {
-      width: device-width;
-      background-color: gray;
+      background-color: white;
       margin:10px 30px 10px 30px;
       border-left: 20px solid green;
       border-right: 20px solid green;
@@ -56,8 +55,8 @@
       animation: movement 4s linear 2s infinity;
     }
     @keyframes movement {
-      from {left: 500px;}
-      to {left: -500px;}
+      from {right: 500px;}
+      to {right: -500px;}
     }
     .newsflash p {
       color: green;
@@ -66,7 +65,7 @@
       background-color: white;
       border: 3px solid green;
       position: relative;
-      top: 150px;
+      top: 160px;
       margin: 10px 20px 10px 20px;
     }
     .headline {
@@ -101,8 +100,10 @@
       animation: color 4s linear 0s 3;
       }
     @keyframes color {
-      from {background-color: green;}
-      to {background-color: orange;}
+      0% {background-color: blue;}
+      25% {background-color: green;}
+      50% {background-color: orange;}
+      100% {background-color: red;}
     }
     .border {
       border-bottom: 5px solid gray;
