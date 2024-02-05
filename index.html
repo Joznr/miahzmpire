@@ -43,20 +43,21 @@
     }
     .newsflashbox {
       background-color: white;
-      margin:10px 30px 10px 30px;
-      border-left: 20px solid green;
-      border-right: 20px solid green;
-      position: fixed;
+      border: 3px solid green;
+      position: relative;
       top: 100px;
+      margin: 10px 20px 10px 20px;
     }
     .newsflash {
-      width: 500px;
+      width: 50px;
       position: relative;
-      animation: movement 4s linear 2s infinity;
+      animation: movement 20s linear 0s infinity;
     }
     @keyframes movement {
-      from {right: 500px;}
-      to {right: -500px;}
+      0% {left: 300px;}
+      25% {left: 200px;}
+      50% {left: 50px;}
+      100% {left: 0px;}
     }
     .newsflash p {
       color: green;
@@ -97,7 +98,7 @@
       background-color: blueviolet;
       min-width: 300px;
       height: 180px;
-      animation: color 4s linear 0s 3;
+      animation: color 4s linear 0s infinity;
       }
     @keyframes color {
       0% {background-color: blue;}
