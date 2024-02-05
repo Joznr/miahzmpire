@@ -10,7 +10,6 @@
       color: black;
       }
     header {
-      width: 100%;
       height: 100px;
       display: flex;
       align-items: center;
@@ -21,12 +20,13 @@
       z-index: 100;
       top: 0px;
       left: 0px;
+      right: 0px;
       }
     .logo {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      min-width: 300px;
+      min-width: 500px;
       margin-left: 5px;
       padding-right: 10px;
       margin-right: 20px;
@@ -36,10 +36,9 @@
       margin-left: 20px;
       }
     .menu {
-      min-width: 600px;
+      min-width: 300px;
       color: white;
       display: flex;
-      flex: 1;
       flex-wrap: nowrap;
       align-items: center;
       justify-content: space-between;
@@ -47,6 +46,12 @@
       }
     .menu h3 {
       color: white;
+    }
+    .search {
+      margin: 0px 60px 0px 10px;
+      min-width: 60px;
+      height:40px;
+      border-radius: 2px;
     }
     .newsflashbox {
       width: 900px;
@@ -110,12 +115,6 @@
       margin-top: 10px;
       top: 110px;
       }
-    .search {
-      margin: 0px 60px 0px 10px;
-      min-width: 60px;
-      height:40px;
-      border-radius: 2px;
-      }
     .box {
       background-color: blueviolet;
       min-width: 300px;
@@ -143,7 +142,7 @@
       <div><h3><a href="/blogs.html"></a>Blogs</h3></div>
       <div><h3><a href="/contacts.html"></a>Contacts</h3></div>
     </div> 
-      <div><input type="search" placeholder="search..." class="search"><img src="" alt=""></div>
+    <div><input type="search" placeholder="search..." class="search"><img src="" alt=""></div>
   </header>
   
   <div class="newsflashbox">
